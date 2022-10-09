@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+
+     <meta name=viewport content="width=device-width, user-scalable=yes,initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+    <style type=text/css>
+      body {
+        font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 44px 0 64px;
+        color: #423F3F;
+      }
+      div.outer {
+        padding: 44px 0 64px;
+      }
+      a {
+        text-decoration: none;
+        color: #1A73E8;
+      }
+      div,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        box-sizing: border-box;
+        font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 0;
+        margin: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      td {
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 15px;
+        line-height: 23px;
+      }
+      h5 {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      
+      img {
+        display: block;
+      }
+      amp-img.center,
+      img.center,
+      div.center {
+        margin: 0 auto;
+      }
+      .mobile {
+        display: none;
+      }
+      .container {
+        margin: 0 auto;
+        width: 720px;
+      }
+     
+      
+     
+    
+      div.two-col table td {
+        width: 360px;
+      }
+      div.two-col h3 {
+        margin: 70px 0 8px;
+        padding: 0 70px;
+      }
+      div.two-col p {
+        margin: 0 0 18px;
+        padding: 0 40px;
+      }
+      div.two-col a.button {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 70px;
+        padding: 12px 18px 14px;
+      }
+      div.two-col.mod-4 {
+        margin-bottom: 14px;
+      }
+      div.two-col.mod-4 a.spacer-top {
+        display: block;
+        font-size: 5px;
+        height: 5px;
+        line-height: 5px;
+        margin: 0 auto;
+      }
+      div.two-col.mod-4 a.button {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 auto;
+        padding: 7px 18px 8px;
+      }
+      div.two-col.mod-4 a.spacer-bottom {
+        display: block;
+        font-size: 6px;
+        height: 6px;
+        line-height: 6px;
+        margin: 0 auto;
+      }
+      div.two-col.mod-4 .a11y-btn {
+        margin-bottom: 64px;
+      }
+      div.gstore {
+        background-color: #FFFFFF;
+        padding: 25px 19px;
+      }
+      div.gstore td.middle {
+        padding: 0 20px 0 43px;
+      }
+      div.gstore div.content {
+        text-align: center;
+      }
+      div.gstore .divider {
+        padding: 30px 40px 44px;
+        text-align: center;
+      }
+      div.gstore .divider img.a-logo {
+        margin: 4px auto 22px;
+      }
+      table.disclaimer-container p.p-spacer {
+        font-size: 17px;
+        height: 17px;
+        line-height: 17px;
+      }
+      span.nowrap {
+        white-space: nowrap;
+      }
+      @media only screen and (max-width: 600px) {
+        /* Global Mobile */
+        div.outer {
+          padding: 0;
+        }
+        .container {
+          width: 360px;
+        }
+        .mobile {
+          display: block;
+        }
+        span.mobile {
+          display: inline;
+        }
+        .desktop {
+          display: none;
+        }
+        .privacy .l-col,
+        .privacy .r-col {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        .privacy .l-col {
+          padding: 40px 0 5px;
+        }
+        .privacy .r-col {
+          padding: 20px 30px 35px;
+        }
+        .privacy h3,
+        .privacy p {
+          text-align: center;
+        }
+        .gstore {
+          padding: 35px 30px 23px;
+        }
+        .gstore td {
+          text-align: center;
+        }
+        .gstore td.logo {
+          display: block;
+          padding: 0;
+          width: 100%;
+        }
+        .gstore td.copy,
+        .gstore td.cta {
+          display: block;
+          width: 100%;
+        }
+        .gstore h3,
+        .gstore p {
+          text-align: center;
+        }
+        .gstore p {
+          margin: 0 0 6px;
+        }
+        .gstore amp-img,
+        .gstore img {
+          margin: 0 auto;
+        }
+        .gstore .logo img,
+        .gstore .logo amp-img {
+          margin-bottom: 18px;
+        }
+        .footer {
+          padding-top: 0;
+        }
+        .footer .m-fluid {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        td.mobile-block {
+          display: block !important;
+        }
+        span.desktop,
+        .desktop {
+          display: none !important;
+        }
+        span.mobile {
+          display: inline-block !important;
+        }
+        .one-col {
+          background-size: 360px 793px !important;
+          padding: 19px 0 312px !important;
+        }
+        .one-col div.one-col-inner {
+          background-color: #FFFFFF !important;
+          margin: 0 19px !important;
+        }
+        .one-col.mod-1 a.button {
+          margin: 0 0 30px !important;
+        }
+        .one-col h1 {
+          padding: 30px 19px 8px !important;
+        }
+        .one-col p {
+          padding: 0 15px 18px !important;
+        }
+        div.three-tile h1 {
+          padding: 0 40px !important;
+          margin: 54px auto 5px !important;
+        }
+        div.three-tile p.subhead {
+          padding: 0 35px !important;
+          margin: 0 0 30px !important;
+        }
+        div.three-tile a.button {
+          margin: 16px 0 40px !important;
+        }
+        div.three-tile .tile-1 p,
+        div.three-tile .tile-2 p,
+        div.three-tile .tile-3 p {
+          margin: 10 10 34px !important;
+          padding: 10  80px !important;
+        }
+        div.three-tile .tile-1 h3,
+        div.three-tile .tile-2 h3,
+        div.three-tile .tile-3 h3 {
+          padding: 25px 80px 15px !important;
+        }
+        div.three-tile .tile-1 p {
+          padding:10px 110px !important;
+        }
+        img.tile-img {
+          margin: 10 auto !important;
+          width: 250px;
+          height: auto;
+        }
+        div.two-col h3 {
+          margin: 40px 0 8px !important;
+          padding: 10 70px !important;
+        }
+        div.two-col .a11y-btn {
+          margin: 0 0 54px !important;
+        }
+        div.gstore h3 {
+          margin: 18px 0 5px !important;
+        }
+        div.gstore p {
+          margin: 0 0 18px !important;
+          padding: 0 20px !important;
+        }
+        div.gstore a.button {
+          background: #ffffff !important;
+          border: 2px solid #1a73e8 !important;
+          border-radius: 4px !important;
+          color: #1a73e8 !important;
+          padding: 7px 18px 8px !important;
+        }
+        .divider {
+          padding: 0px 40px 67px;
+          text-align: center;
+        }
+        .divider img.a-logo {
+          margin: 4px auto 22px;
+        }
+      }
+    </style>
+    <style type=text/css>
+      @media screen and (max-width: 600px) {
+        td.stack {
+          width: 100% !important;
+          display: block !important;
+        }
+        table.module td.headline {
+          padding: 32px 26px 28px !important;
+        }
+        td.m-reverse-stack-header {
+          display: table-header-group !important;
+        }
+        td.m-reverse-stack-footer {
+          display: table-footer-group !important;
+        }
+        td.m-vertical-spacer {
+          display: table-cell !important;
+        }
+        td.card-headline,
+        td.card-body,
+        td.card-cta {
+          text-align: center !important;
+        }
+        td.icon,
+        td.icon-partner {
+          float: none !important;
+        }
+        td.icon img {
+          width: 56px !important;
+          height: 56px !important;
+        }
+        td.hero img.mobile {
+          width: 100% !important;
+          display: block !important;
+        }
+        table.height-auto,
+        td.height-auto {
+          height: auto !important;
+        }
+        table.m-fluid,
+        td.m-fluid,
+        img.m-fluid {
+          width: 100% !important;
+        }
+        table.m-hide,
+        td.m-hide,
+        td.hero img.m-hide {
+          display: none !important;
+        }
+        td.s-v-16.m-hide,
+        td.s-v-32.m-hide {
+          display: none;
+        }
+        table.d-hide,
+        td.d-hide,
+        td.hero img.d-hide {
+          display: inline-block !important;
+        }
+        .module {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      .module {
+        height: 1px;
+        width: 720px;
+      }
+      .module .headline {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        font-family: 'Google Sans', Arial, sans-serif;
+        font-weight: 600;
+        padding: 40px 100px 24px;
+      }
+      .spacer-bg.spacer-horizontal.m-hide.s-h-32,
+      .s-h-32 {
+        width: 32px;
+      }
+      .spacer-bg.spacer-horizontal.m-hide.s-h-16,
+      .s-h-16 {
+        width: 16px;
+      }
+      .h-100-p {
+        height: 100%;
+      }
+      .w-100-p {
+        width: 100%;
+      }
+      .card-container-208 {
+        width: 208px;
+      }
+      .card-container-320 {
+        width: 320px;
+      }
+      .card-container-328 {
+        width: 328px;
+      }
+      .icon {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        float: left;
+      }
+      .icon amp-img {
+        height: 50px;
+        width: 50px;
+      }
+      .card-headline {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .card-body {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 12px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .icon-partner {
+        width: 64px;
+        height: 32px;
+        float: left;
+        padding-bottom: 12px;
+      }
+      .card-cta {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 24px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .card-cta a {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 24px;
+        font-family: 'Google Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: #1967d2;
+        font-weight: 600;
+      }
+      .s-v-16 {
+        display: none;
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .s-v-16.m-hide {
+        display: table-cell;
+      }
+      .s-v-32 {
+        display: none;
+        height: 32px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .s-v-32.m-hide {
+        display: table-cell;
+      }
+      .hero amp-img.desktop {
+        border: none;
+        width: 328px;
+        height: auto;
+        display: block;
+      }
+      .hero amp-img.mobile {
+        border: none;
+        display: none;
+      }
+    </style>
+    
+   
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+  
+    <style type="text/css">
+      @font-face {
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: normal;
+        src: url('https://start.forhims.com/wp-content/themes/hims-landing-pages/fonts/sofiaproregular-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: 500;
+        src: url('https://start.forhims.com/wp-content/themes/hims-landing-pages/fonts/sofiapromedium-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: 600;
+        src: url('https://start.forhims.com/wp-content/themes/hims-landing-pages/fonts/sofiaprosemibold-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: bold;
+        src: url('https://start.forhims.com/wp-content/themes/hims-landing-pages/fonts/sofiaprobold-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'IvarText';
+        font-style: normal;
+        font-weight: 500;
+        src: url('https://start.forhers.com/wp-content/themes/hims-inc-landing-page-builder/fonts/ivartextmedium-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'IvarText';
+        font-style: normal;
+        font-weight: 600;
+        src: url('https://start.forhers.com/wp-content/themes/hims-inc-landing-page-builder/fonts/ivartextsemibold-webfont.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'IvarText';
+        font-style: normal;
+        font-weight: bold;
+        src: url('https://start.forhers.com/wp-content/themes/hims-inc-landing-page-builder/fonts/ivartextbold-webfont.woff') format('woff');
+      }
+
+
+      /* FULL WIDTH CLASSES */
+      @media (max-width:600px) {
+        .ow100 {
+          width: 100%;
+        }
+
+        .ow50 {
+          width: 50%;
+        }
+
+        .ow70 {
+          width: 70%;
+        }
+
+        *[class~=opadt] {
+          padding-top: 45px !important;
+        }
+
+        *[class~=onegmargt] {
+          margin-top: -40px;
+        }
+
+        *[class~=oheight] {
+          height: 135px;
+        }
+      }
+
+
+
+
+
+
+      /* OVERALL STYLYING RESETS */
+
+
+      /* Ensure tables don’t have any extra spacing*/
+      table {
+        border-collapse: collapse;
+      }
+
+      /* Ensure no unwated margins on all copy*/
+      p h1,
+      h2,
+      h3,
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Ensure that images don’t have borders, text-decoration and unwanted spacing */
+      img,
+      a img {
+        border: 0 !important;
+        height: auto;
+        line-height: 100%;
+        outline: none;
+        text-decoration: none;
+      }
+
+      /* Ensure the main body container has correct fallbacks*/
+      body,
+      #bodyTable {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Allow smoother rendering of resized image in IE */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* Remove spacing between tables in Outlook 2007 and up */
+      table,
+      td {
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+      }
+
+
+
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      a,
+      li,
+      td,
+      body,
+      table {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+
+
+      /* FONT STYLING  */
+      h1 {
+        color: #000001;
+        font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 52px;
+        letter-spacing: normal;
+        margin: 0;
+      }
+
+      h2 {
+        color: #000001;
+        font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: normal;
+      }
+
+      h3 {
+
+        color: #000001;
+        font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: normal;
+      }
+
+      h4 {
+        color: #000001;
+        font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: normal;
+      }
+
+      p {
+        font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        word-break: break-word;
+      }
+
+
+
+      /* TABLET WIDTH AND PADDING */
+      @media (max-width: 599px) {
+        .w100 {
+          width: 100% !important;
+        }
+
+        .w95 {
+          width: 95% !important;
+        }
+
+        .w90 {
+          width: 90% !important;
+        }
+
+        .w85 {
+          width: 85% !important;
+        }
+
+        .w80 {
+          width: 80% !important;
+        }
+
+        .w70 {
+          width: 70% !important;
+        }
+
+        .w50 {
+          width: 65% !important;
+        }
+
+  .mobile-100p {
+          width: auto !important;
+        }
+
+      
+
+        .mobile-hide {
+          display: none !important;
+        }
+
+      
+
+        .background-color-white {
+          background-color: #ffffff !important;
+        }
+
+       
+      }
+
+
+      /* MB WIDTH */
+      @media (max-width: 560px) {
+
+        .coulumn50 {
+          width: 100% !important;
+        }
+
+        .w100m,
+        .coulumn50 {
+          width: 100% !important;
+        }
+
+        u+.body .full-wrap {
+          width: 100% !important;
+          width: 100vw !important;
+        }
+      }
+
+
+
+
+      /* Ensure large text on mb stays large if user choose to make large */
+      @media only screen and (max-width: 480px) {
+
+        body,
+        table,
+        td,
+        p,
+        a,
+        li,
+        blockquote {
+          -webkit-text-size-adjust: none !important;
+        }
+
+      }
+
+
+
+      @media only screen and (max-width: 599px) {
+
+
+        h1 {
+          font-size: 24px !important;
+          line-height: 110% !important;
+        }
+
+        h2 {
+          font-size: 20px !important;
+          line-height: 28px !important;
+        }
+
+        h3 {
+          font-size: 18px !important;
+          line-height: 125% !important;
+        }
+        
+
+        h4 {
+          font-size: 16px !important;
+          line-height: 150% !important;
+        }
+
+        p {
+          font-size: 15px !important;
+          line-height: 140% !important;
+        }
+
+        .text-custom {
+          font-size: 14px !important;
+          line-height: 140% !important;
+        }
+
+      }
+    </style>
+    <style type="text/css">
+      /* CUSTOM MOBILE */
+      @media (max-width: 599px) {
+        .pad-custom {
+          padding-top: 25% !important;
+        }
+
+        .background-color-custom {
+          background-color: #fbf8f5 !important;
+        }
+
+        .img-size-custom {
+          width: 75% !important;
+        }
+      }
+
+
+      /* CUSTOM BACKGROUND IMG MOBILE */
+      @media screen and (max-width:599px) {
+        .imageswap {
+          background: url("") no-repeat !important;
+          background-size: 180% auto !important;
+          max-width: 100% !important;
+          background-color: #f4e7d7 !important;
+          background-position: center !important;
+          border-radius: 10px;
+        }
+      }
+    </style>
+  
+  </head>
+  <body>
+    </div>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+        <td align="center">
+          <table cellspacing="0" cellpadding="0" border="0" width="600" class="container" align="center">
+            <tr>
+              <td>
+                <table class="tb_properties border_style" style="background-color:#FFFFFF;" cellspacing="0" cellpadding="0" bgcolor="#ffffff" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+
+                          <!-- added padding here -->
+                          <td class="content_padding" style="">
+
+                            <!-- end of comment -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                <td align="center" class="header" valign="top">
+                              
+                                  <tbody>
+                                    <td align="left" valign="top">
+                                      <table cellspacing="0" cellpadding="0" style="width:100%">
+                                        <tbody>
+                                          <tr>
+                                            <td class="responsive-td" valign="top" style="width: 100%;">
+                                              <table cellpadding="0" cellspacing="0" width="100%" style="background-color: #080505; min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                  <td style="padding: 0px 5px; " class="stylingblock-content-wrapper camarker-inner">
+                                                      </tr>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <table cellpadding="0" cellspacing="0" width="100%" style="background-color: #070707; min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                  <td style="padding: 0px; " class="stylingblock-content-wrapper camarker-inner">
+                                                    <table width="100%" cellspacing="0" cellpadding="0">
+                                                      <tr>
+
+                                                        <td align="center"><a href="https://kyutee.com" title="KYUTEE " data-linkto="https://"><img data-assetid="1116" src="kyutee.svg" alt="Kyutee" width="300" style="display: block; padding: 15px 0px 13px; text-align: center; height: auto; width: 50%; border: 0px none transparent;"></a></td>
+                                                      </tr>
+                                                    </table>
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                              <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper mobile-hidden">
+                                                <tr>
+                                                  <td style="padding: 0px; " class="stylingblock-content-wrapper mobile-hidden camarker-inner">
+                                                    <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" style="overflow:hidden;background:#000000" width="100%">
+                                                      <tr>
+                                                        <td align="left" bgcolor="#000000" colspan="2" style="padding:0;margin:0;background:#000000;">
+                                                          <table bgcolor="#000000" border="0" cellpadding="0" cellspacing="0" style="overflow:hidden;background:#000000;" width="100%">
+                                                            <tr>
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="70">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/new" style="color:#ffffff;text-decoration:none;" title="New">New</a>
+                                                              </td>
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="70">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/signature" style="color:#ffffff;text-decoration:none;" title="Bath">Signature</a>
+                                                              </td>
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="70">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/essentials" style="color:#ffffff;text-decoration:none;" title="Hair">Essential</a>
+                                                              </td>
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="70">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/ultimate" style="color:#ffffff;text-decoration:none;" title="Face">Ultimate</a>
+                                                              </td>
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="60">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/nail-care" style="color:#ffffff;text-decoration:none;" title="Body">Nail Care</a>
+                                                              </td>
+
+                                                              <td align="center" style="padding: 10px 0; font-size: 17px; mso-line-height-rule:exactly; line-height:20px;" valign="middle" width="100">
+                                                                <a data-linkto="https://" href="https://kyutee.com/collections/decorations" style="color:#ffffff;text-decoration:none;" title="Fragrances">Decorations</a>
+                                                              </td>
+                                                            </tr>
+
+                                                          </table>
+                                                        </td>
+
+                                                      </tr>
+                                                    </table>
+
+                                                  </td>
+                                                </tr>
+
+                                              </table>
+                                              <table cellpadding="0" cellspacing="0" width="100%" style="background-color: transparent; min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                  <td style="padding: 2px 0px 0px; " class="stylingblock-content-wrapper camarker-inner">
+                                                    <br>
+                                             <body id="bodyTable" class="body" style="-webkit-text-size-adjust: none;-ms-text-size-adjust: none; margin: 0; padding: 0; width: 100%; background-color: #ffffff;">
+    <div style="display:none !important;visibility:hidden;mso-hide:all;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">$20 off the new Hims cologne</div> <span class="hidden" style="display: none !important; mso-hide: all; height: 0; max-height: 0; visibility: hidden; overflow: hidden;"> </span>
+
+    <table class="full-wrap" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color: #fff;  width: 100%;">
+      <!-- HEADER START-->
+      <tr>
+        <td align="center">
+          <table class="w100 ow100" align="center" cellpadding="0" cellspacing="0" border="0" width="700" style="background-color: #f4e7d7;" border-radius= 10px;  >
+            <!-- Hero Image-->
+            <tr>
+              <td align="center">
+                <table class="w100 ow100" width="700" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #f4e7d7;">
+                  <tr>
+                    <!-- * BACKGROUND-IMAGE 354x200 * -->
+                    <td class="imageswap" background="" align="center" style="background: #f4e7d7 ; ">
+    
+                      <div>
+                        <table align="center" cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <table class="w50" align="center" cellpadding="0" cellspacing="0" border="0" width="380">
+                                <!-- image start -->
+                                <tr>
+                                  <td class="padt20 padb0" align="center" style="padding-top: 35px; padding-bottom: 5px; ">
+                                    <a href="" target="_blank" style="font-size: 22px; text-align:center; color: #000; font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 400;">
+                                      <img class="" src="https://cdn.shopify.com/s/files/1/0276/1903/3203/files/2._PEELPRESS_FILE_3_section_NEW3.jpg?v=1664167238" alt="" width="310" role="presentation" aria-hidden="true" style="border: none;  width: 310px; max-width: 100%; ">
+                                    </a>
+                                  </td>
+                                </tr>
+                                <!-- image end -->
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <table class="w90" width="700" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td class="padt0" align="center" style="padding-top: 0px; ">
+                                    <table class="w90 " cellpadding="0" cellspacing="0" border="0" width="70%">
+                                      <tr>
+                                        <td class="padt0" align="left" style=" ">
+                                          <table class="w100" align="left" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <!-- copy start -->
+                                            <tr>
+                                              <td class="padt5 padb5" style="color: #000001;font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; padding-top: 5px; padding-bottom: 10px; font-size: 55px; line-height: 52px">
+
+                                                <h1 style="font-size: 38px; line-height: 42px; padding: 0px; margin: 0;"><h1>Nails That Make A Statement</h1>
+
+                                              </td>
+                                            </tr>
+                                            <!-- copy end -->
+                                            <!-- copy start -->
+                                            <tr>
+                                              <td class="padt5 padb0" style="color: #000001;font-family: 'SofiaPro', 'Helvetica Neue', Helvetica, Arial, sans-serif;  text-align: center; padding-top: 3px; padding-bottom: 10px ; font-size: 6px; line-height: 52px">
+                                                <p style="font-size:17px; line-height: 140%; padding: 0px; margin: 0;">At Kyutee, our goal is to make sure that all of our customers are satisfied with their purchase(s).  If you are unhappy with your purchase for ANY reason, please reach out to us within 14 days of receipt of delivery.  We'll do our absolute best to ensure your satisfaction.
+                                                  <br><b>Free Shipping on USA Orders Above $40+ </b>
+                                                </p>
+                                              </td>
+                                            </tr>
+                                            <!-- copy end -->
+                                            <!-- cta start -->
+                                            
+                                            <tr>
+                                              <td align="center" class="padt15 padb0" style="padding-top:15px; padding-bottom:60px;" valign="top">
+                                                <table class="button" width="165" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#000001" style="background-color:#000001;max-width:165px;">
+                                                  <tr>
+                                                    <td class="" valign="middle" align="center" height="50" style="font-family:'SofiaPro','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:17px;line-height:20px; ">
+                                                      <a class="button-border-black" href="https://kyutee.com" style="color:#ffffff;display:block;text-decoration:none;line-height:50px; border: 2px solid black;"><span class="buttontext-black">shop now</span>
+                                                      </a>
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                            <!-- cta end -->
+                                            <!-- cta end -->
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="pad-custom " align="center" style="padding-top:65px; ">
+                              <table class="ow100" align="center" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td align="center" style=" font-size: 2px; line-height: 2px;">&nbsp;</td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      <!--[if gte mso 9]>
+                          </v:textbox>
+                          </v:fill>
+                        </v:rect>
+                        </v:image>
+                      <![endif]-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- HEADER END-->
+      <!-- BODY START-->
+      <tr>
+        <td class="" align="center" style="">
+          <table class="w100 " align="center" cellpadding="0" cellspacing="0" border="0" width="700" style="background-color: #DFD0D0;">
+        </table>
+        </td>
+        </tr>
+        </table>
+        </body>
+                           <br>
+                               <meta itemprop=description content=Pre-order>
+  </div>
+  <div style="display:none; font-size:0; height:0; line-height:0; mso-line-height-rule:exactly; width:0px" height=0 width=0>Lorem Ipsum</div>
+  <div style="display: none; max-height: 0px; overflow: hidden;"></div>
+  <body class=body><img alt="" height=1 width=3 src= style="position: absolute; opacity: 0">
+    <div class=outer>
+      <div class=container>
+        <div class=preheader>
+        </div>
+        <div class=masthead>
+
+          <!-- HEADER -->
+          <table role=presentation id=logo bgcolor=#ffffff width=100% style="border-collapse: collapse; width: 100%; min-width:100%;" cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td align=center class=pad-tp-bt-32 style="border-collapse: collapse; font-size: 16px; line-height: 24px; color: #5F6368; font-family: GoogleSans-Regular, Helvetica, Arial, sans-serif;">
+                <table class=header width=100% style="border-collapse: collapse;" cellpadding=0 cellspacing=0 border=0 role=presentation>
+                 
+                </table>
+              </td>
+            </tr>
+          </table> <!-- /HEADER-->
+        </div>
+     
+        <div class="three-tile mod-2"><a aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"></a>
+         
+          <table class=desktop role=presentation>
+            <tbody>
+              <tr>
+                <td class=tile-1><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+                     width=210></a></td>
+                <td class=tile-2><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+                    width=210></a></td>
+                <td><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210></a></td>
+              </tr>
+              <tr>
+                <td class=tile-1>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+                <td class=tile-2>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+                <td class=tile-3>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tile-1 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210 height=200></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="tile-2 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="tile-3 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+          width=210></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          <br>
+          <table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="min-width:600px; width:600px; background-color:#000000;" class="scale">
+  <tr>
+    <td width="100%" align="center" style="padding:50px 0px 24px 0px;" class="ftr-icon-op">
+      <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="padding:0px 30px; padding-left: 0px!important;" class="ftr-icon-p">
+            <table width="120" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 120px;" class="ftr-icon-w">
+              <tr>
+                <td width="100%" align="center">
+                  <a href="https://kyutee.com/pages/faq-policies/#satisfaction_guarantee" style="color:#333333; text-decoration:none;" target="_blank"><img src="https://img.icons8.com/dotty/160/FFFFFF/checked.png" style="display:block; max-width:38px!important;" width="38" height="38" border="0" alt="" class="scale"></a>
+                </td>
+              </tr>
+              <tr>
+                <td width="100%" align="center" style="padding: 5px 0px 0px 0px; color:#fafafa; text-align:center; font-family: 'Inter', Arial, sans-serif; font-size:12px; line-height: 16px; text-align: center; letter-spacing: 1px;" class="ftr-icon-txt">
+                  <a href="https://kyutee.com/pages/faq-policies/#satisfaction_guarantee" target="_blank" style="color:#fafafa; text-decoration:none;">SATISFACTION <br />GAUARRANTE</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="padding:0px 30px;" class="ftr-icon-p">
+            <table width="120" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 120px;" class="ftr-icon-w">
+              <tr>
+                <td width="100%" align="center">
+                  <a href="https://kyutee.com/pages/faq-policies/#free_shipping" style="color:#333333; text-decoration:none;" target="_blank"><img src="https://img.icons8.com/ios/100/FFFFFF/free-shipping.png" style="display:block; max-width:38px!important;" width="38" height="38" border="0" alt="" class="scale"></a>
+                </td>
+              </tr>
+              <tr>
+                <td width="100%" align="center" style="padding: 5px 0px 0px 0px; color:#fafafa; text-align:center; font-family: 'Inter', Arial, sans-serif; font-size:12px; line-height: 16px; text-align: center; letter-spacing: 1px;" class="ftr-icon-txt">
+                  <a href="https://kyutee.com/pages/faq-policies/#free_shipping" target="_blank" style="color:#fafafa; text-decoration:none;">FREE SHIPPING<br />ON USA ORDERS</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td style="padding:0px 30px; padding-right: 0px!important;" class="ftr-icon-p">
+            <table width="120" align="center" border="0" cellpadding="0" cellspacing="0" style="width: 120px;" class="ftr-icon-w">
+              <tr>
+                <td width="100%" align="center">
+                  <a href="https://kyutee.com/pages/store-locator" style="color:#333333; text-decoration:none;" target="_blank"><img src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/66/FFFFFF/external-location-pin-digital-marketing-smashingstocks-glyph-smashing-stocks.png" style="display:block; max-width:38px!important;" width="38" height="38" border="0" alt="" class="scale"></a>
+                </td>
+              </tr>
+              <tr>
+                <td width="100%" align="center" style="padding: 5px 0px 0px 0px; color:#fafafa; text-align:center; font-family: 'Inter', Arial, sans-serif; font-size:12px; line-height: 16px; text-align: center; letter-spacing: 1px;" class="ftr-icon-txt">
+                  <a href="https://kyutee.com/pages/store-locator" target="_blank" style="color:#fafafa; text-decoration:none;">FIND A<br />STORE</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center" style="padding: 15px 50px 15px 50px;" class="nav-p">
+      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" style="width:500px; min-width:500px; height:40px; font-family: 'Inter', Arial, sans-serif; color:#fafafa; border-top: 1px solid #fafafa; padding: 0px!important; font-weight: 600; mso-padding-alt: 12px 0px;" class="nav-txt">
+            <a href="https://kyutee.com/collections/all" target="_blank" style="padding:32px 0px; min-width:500px; display:block; text-decoration:none; text-align:center; font-size:20px; color:#fafafa; background:#000000; mso-line-height-rule:exactly; line-height:24px;" class="nav-txt">
+              <font style="color:#fafafa;">&nbsp;&nbsp;&nbsp;SHOP&nbsp;&nbsp;</font>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="width:500px; min-width:500px; height:40px; font-family: 'Inter', Arial, sans-serif; color:#fafafa; border-top: 1px solid #fafafa; padding: 0px!important; font-weight: 600; mso-padding-alt: 12px 0px;" class="nav-txt">
+            <a href="https://kyutee.com/collections/bundles-kits" target="_blank" style="padding:32px 0px; min-width:500px; display:block; text-decoration:none; text-align:center; font-size:20px; color:#fafafa; background:#000000; mso-line-height-rule:exactly; line-height:24px;" class="nav-txt">
+              <font style="color:#fafafa;">&nbsp;&nbsp;BUNDLES & KITS&nbsp;&nbsp;</font>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="width:500px; min-width:500px; height:40px; font-family: 'Inter', Arial, sans-serif; color:#fafafa; border-top: 1px solid #fafafa; padding: 0px!important; font-weight: 600; mso-padding-alt: 12px 0px;" class="nav-txt">
+            <a href="https://kyutee.com/collections/sale" target="_blank" style="padding:32px 0px; min-width:500px; display:block; text-decoration:none; text-align:center; font-size:20px; color:#fafafa; background:#000000; mso-line-height-rule:exactly; line-height:24px;" class="nav-txt">
+              <font style="color:#fafafa;">&nbsp;&nbsp;SALE&nbsp;&nbsp;</font>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="width:500px; min-width:500px; height:40px; font-family: 'Inter', Arial, sans-serif; color:#fafafa; border-top: 1px solid #fafafa; border-bottom: 1px solid #fafafa; padding: 0px!important; font-weight: 600; mso-padding-alt: 12px 0px;" class="nav-txt">
+            <a href="https://kyutee.com/pages/special-offers" target="_blank" style="padding:32px 0px; min-width:500px; display:block; text-decoration:none; text-align:center; font-size:20px; color:#fafafa; background:#000000; mso-line-height-rule:exactly; line-height:24px;" class="nav-txt">
+              <font style="color:#fafafa;">&nbsp;&nbsp;SPECIAL OFFERS&nbsp;&nbsp;</font>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center">
+      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="100%" align="center" style="padding: 50px 20px 12px 20px; color:#fafafa; text-align:center; font-family: 'Inter', Arial, sans-serif; font-weight: bold; font-size:22px; line-height: 26px;" class="ftr-hl">
+            Questions?
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" align="center" style="padding: 0px 20px 50px 20px; color:#fafafa; text-align:center; font-family: 'Inter', Arial, sans-serif; font-size:16px; line-height: 22px;" class="ftr-txt">
+            Check out our <a href="https://kyutee.com/pages/faq" target="_blank" style="color:#fafafa; text-decoration: underline; font-weight: 600;">FAQs</a> or send us a note <a href="https://kyutee.com/pages/contact-us" target="_blank" style="color:#fafafa; text-decoration: underline; font-weight: 600;">here</a>.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="min-width:600px; width:600px; background-color:#fafafa;" class="scale">
+  <tr>
+    <td width="100%" align="center">
+      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="100%" align="center" style="padding:36px 12px 12px 12px;" class="soc-p">
+            <table align="center" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td style="padding:0px 12px; padding-top: 0px!important; padding-bottom: 0px!important;" class="soc-p">
+                  <a href="https://www.facebook.com/kyuteenails" target="_blank" style="color:#000000; text-decoration:none;"><img src="https://img.icons8.com/ios-filled/250/1A1A1A/facebook--v1.png" style="display:block; max-width:30px!important;" width="30" height="30" border="0" alt="ig" class="scale"></a>
+                </td>
+                <td style="padding:0px 12px; padding-top: 0px!important; padding-bottom: 0px!important;" class="soc-p">
+                  <a href="https://www.instagram.com/kyuteenails" target="_blank" style="color:#000000; text-decoration:none;"><img src="https://img.icons8.com/ios-filled/250/1A1A1A/instagram-new--v1.png" style="display:block; max-width:30px!important;" width="30" height="30" border="0" alt="fb" class="scale"></a>
+                </td>
+                <td style="padding:0px 12px; padding-top: 0px!important; padding-bottom: 0px!important;" class="soc-p">
+                  <a href="https://www.youtube.com/c/Kyutee/" target="_blank" style="color:#000000; text-decoration:none;"><img src="https://img.icons8.com/ios-filled/250/1A1A1A/youtube-play.png" style="display:block; max-width:35px!important;" width="35" height="35" border="0" alt="tw" class="scale"></a>
+                </td>
+                <td style="padding:0px 12px; padding-top: 0px!important; padding-bottom: 0px!important;" class="soc-p">
+                  
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- footer - legal text -->
+<table width="600" align="center" border="0" cellpadding="0" cellspacing="0" style="min-width:600px; width:600px; background-color:#fafafa;" class="scale">
+  <tr>
+    <td width="100%" align="center" style="padding: 30px; " class="mod-p">
+      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+
+          <!-- medium hero text -->
+          <td width="100%" align="center" style=" padding: 0px 30px 10px 30px; text-align:center; color: #A8A8A8; font-family: Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: 18px; text-transform: uppercase;">
+            KYUTEE&nbsp;<br />
+            [SENDER_ADDRESS]&nbsp;<br />
+            [SENDER_CITY] [SENDER_COUNTRY]<br />
+            <a href="mailto:go@awaytravel.com" style="color: #A8A8A8; text-decoration:none" target="_blank">support@kyutee.com</a><br />
+            &copy; 2022&nbsp;KYUTEE
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+<img src="" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;" />
+
+  </body>
+</html>
