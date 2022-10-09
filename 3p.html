@@ -1,0 +1,561 @@
+ <!DOCTYPE HTML>
+<html lang=en>
+  <head>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+    <meta name=viewport content="width=device-width, user-scalable=yes,initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv=X-UA-Compatible content=IE=edge>
+    <style type=text/css>
+      body {
+        font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 44px 0 64px;
+        color: #423F3F;
+      }
+      div.outer {
+        padding: 44px 0 64px;
+      }
+      a {
+        text-decoration: none;
+        color: #1A73E8;
+      }
+      div,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        box-sizing: border-box;
+        font-family: 'Google Sans', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 0;
+        margin: 0;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      td {
+        box-sizing: border-box;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: bold;
+      }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+      h4 {
+        font-size: 15px;
+        line-height: 23px;
+      }
+      h5 {
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      img {
+        display: block;
+      }
+      amp-img.center,
+      img.center,
+      div.center {
+        margin: 0 auto;
+      }
+      .mobile {
+        display: none;
+      }
+      .container {
+        margin: 0 auto;
+        width: 720px;
+      }
+
+
+
+
+      div.two-col table td {
+        width: 360px;
+      }
+      div.two-col h3 {
+        margin: 70px 0 8px;
+        padding: 0 70px;
+      }
+      div.two-col p {
+        margin: 0 0 18px;
+        padding: 0 40px;
+      }
+      div.two-col a.button {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 70px;
+        padding: 12px 18px 14px;
+      }
+      div.two-col.mod-4 {
+        margin-bottom: 14px;
+      }
+      div.two-col.mod-4 a.spacer-top {
+        display: block;
+        font-size: 5px;
+        height: 5px;
+        line-height: 5px;
+        margin: 0 auto;
+      }
+      div.two-col.mod-4 a.button {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 auto;
+        padding: 7px 18px 8px;
+      }
+      div.two-col.mod-4 a.spacer-bottom {
+        display: block;
+        font-size: 6px;
+        height: 6px;
+        line-height: 6px;
+        margin: 0 auto;
+      }
+      div.two-col.mod-4 .a11y-btn {
+        margin-bottom: 64px;
+      }
+      div.gstore {
+        background-color: #FFFFFF;
+        padding: 25px 19px;
+      }
+      div.gstore td.middle {
+        padding: 0 20px 0 43px;
+      }
+      div.gstore div.content {
+        text-align: center;
+      }
+      div.gstore .divider {
+        padding: 30px 40px 44px;
+        text-align: center;
+      }
+      div.gstore .divider img.a-logo {
+        margin: 4px auto 22px;
+      }
+      table.disclaimer-container p.p-spacer {
+        font-size: 17px;
+        height: 17px;
+        line-height: 17px;
+      }
+      span.nowrap {
+        white-space: nowrap;
+      }
+      @media only screen and (max-width: 600px) {
+        /* Global Mobile */
+        div.outer {
+          padding: 0;
+        }
+        .container {
+          width: 360px;
+        }
+        .mobile {
+          display: block;
+        }
+        span.mobile {
+          display: inline;
+        }
+        .desktop {
+          display: none;
+        }
+        .privacy .l-col,
+        .privacy .r-col {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+        .privacy .l-col {
+          padding: 40px 0 5px;
+        }
+        .privacy .r-col {
+          padding: 20px 30px 35px;
+        }
+        .privacy h3,
+        .privacy p {
+          text-align: center;
+        }
+        .gstore {
+          padding: 35px 30px 23px;
+        }
+        .gstore td {
+          text-align: center;
+        }
+        .gstore td.logo {
+          display: block;
+          padding: 0;
+          width: 100%;
+        }
+        .gstore td.copy,
+        .gstore td.cta {
+          display: block;
+          width: 100%;
+        }
+        .gstore h3,
+        .gstore p {
+          text-align: center;
+        }
+        .gstore p {
+          margin: 0 0 6px;
+        }
+        .gstore amp-img,
+        .gstore img {
+          margin: 0 auto;
+        }
+        .gstore .logo img,
+        .gstore .logo amp-img {
+          margin-bottom: 18px;
+        }
+        .footer {
+          padding-top: 0;
+        }
+        .footer .m-fluid {
+          width: 100%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        td.mobile-block {
+          display: block !important;
+        }
+        span.desktop,
+        .desktop {
+          display: none !important;
+        }
+        span.mobile {
+          display: inline-block !important;
+        }
+        .one-col {
+          background-size: 360px 793px !important;
+          padding: 19px 0 312px !important;
+        }
+        .one-col div.one-col-inner {
+          background-color: #FFFFFF !important;
+          margin: 0 19px !important;
+        }
+        .one-col.mod-1 a.button {
+          margin: 0 0 30px !important;
+        }
+        .one-col h1 {
+          padding: 30px 19px 8px !important;
+        }
+        .one-col p {
+          padding: 0 15px 18px !important;
+        }
+        div.three-tile h1 {
+          padding: 0 40px !important;
+          margin: 54px auto 5px !important;
+        }
+        div.three-tile p.subhead {
+          padding: 0 35px !important;
+          margin: 0 0 30px !important;
+        }
+        div.three-tile a.button {
+          margin: 16px 0 40px !important;
+        }
+        div.three-tile .tile-1 p,
+        div.three-tile .tile-2 p,
+        div.three-tile .tile-3 p {
+          margin: 10 10 34px !important;
+          padding: 10  80px !important;
+        }
+        div.three-tile .tile-1 h3,
+        div.three-tile .tile-2 h3,
+        div.three-tile .tile-3 h3 {
+          padding: 25px 80px 15px !important;
+        }
+        div.three-tile .tile-1 p {
+          padding:10px 110px !important;
+        }
+        img.tile-img {
+          margin: 10 auto !important;
+          width: 250px;
+          height: auto;
+        }
+        div.two-col h3 {
+          margin: 40px 0 8px !important;
+          padding: 10 70px !important;
+        }
+        div.two-col .a11y-btn {
+          margin: 0 0 54px !important;
+        }
+        div.gstore h3 {
+          margin: 18px 0 5px !important;
+        }
+        div.gstore p {
+          margin: 0 0 18px !important;
+          padding: 0 20px !important;
+        }
+        div.gstore a.button {
+          background: #ffffff !important;
+          border: 2px solid #1a73e8 !important;
+          border-radius: 4px !important;
+          color: #1a73e8 !important;
+          padding: 7px 18px 8px !important;
+        }
+        .divider {
+          padding: 0px 40px 67px;
+          text-align: center;
+        }
+        .divider img.a-logo {
+          margin: 4px auto 22px;
+        }
+      }
+    </style>
+    <style type=text/css>
+      @media screen and (max-width: 600px) {
+        td.stack {
+          width: 100% !important;
+          display: block !important;
+        }
+        table.module td.headline {
+          padding: 32px 26px 28px !important;
+        }
+        td.m-reverse-stack-header {
+          display: table-header-group !important;
+        }
+        td.m-reverse-stack-footer {
+          display: table-footer-group !important;
+        }
+        td.m-vertical-spacer {
+          display: table-cell !important;
+        }
+        td.card-headline,
+        td.card-body,
+        td.card-cta {
+          text-align: center !important;
+        }
+        td.icon,
+        td.icon-partner {
+          float: none !important;
+        }
+        td.icon img {
+          width: 56px !important;
+          height: 56px !important;
+        }
+        td.hero img.mobile {
+          width: 100% !important;
+          display: block !important;
+        }
+        table.height-auto,
+        td.height-auto {
+          height: auto !important;
+        }
+        table.m-fluid,
+        td.m-fluid,
+        img.m-fluid {
+          width: 100% !important;
+        }
+        table.m-hide,
+        td.m-hide,
+        td.hero img.m-hide {
+          display: none !important;
+        }
+        td.s-v-16.m-hide,
+        td.s-v-32.m-hide {
+          display: none;
+        }
+        table.d-hide,
+        td.d-hide,
+        td.hero img.d-hide {
+          display: inline-block !important;
+        }
+        .module {
+          padding-left: 20px !important;
+          padding-right: 20px !important;
+        }
+      }
+      .module {
+        height: 1px;
+        width: 720px;
+      }
+      .module .headline {
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        font-family: 'Google Sans', Arial, sans-serif;
+        font-weight: 600;
+        padding: 40px 100px 24px;
+      }
+      .spacer-bg.spacer-horizontal.m-hide.s-h-32,
+      .s-h-32 {
+        width: 32px;
+      }
+      .spacer-bg.spacer-horizontal.m-hide.s-h-16,
+      .s-h-16 {
+        width: 16px;
+      }
+      .h-100-p {
+        height: 100%;
+      }
+      .w-100-p {
+        width: 100%;
+      }
+      .card-container-208 {
+        width: 208px;
+      }
+      .card-container-320 {
+        width: 320px;
+      }
+      .card-container-328 {
+        width: 328px;
+      }
+      .icon {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        float: left;
+      }
+      .icon amp-img {
+        height: 50px;
+        width: 50px;
+      }
+      .card-headline {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .card-body {
+        font-size: 14px;
+        line-height: 20px;
+        padding-bottom: 12px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .icon-partner {
+        width: 64px;
+        height: 32px;
+        float: left;
+        padding-bottom: 12px;
+      }
+      .card-cta {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 24px;
+        font-family: 'Google Sans', Arial, sans-serif;
+      }
+      .card-cta a {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 24px;
+        font-family: 'Google Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: #1967d2;
+        font-weight: 600;
+      }
+      .s-v-16 {
+        display: none;
+        height: 16px;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .s-v-16.m-hide {
+        display: table-cell;
+      }
+      .s-v-32 {
+        display: none;
+        height: 32px;
+        font-size: 32px;
+        line-height: 32px;
+      }
+      .s-v-32.m-hide {
+        display: table-cell;
+      }
+      .hero amp-img.desktop {
+        border: none;
+        width: 328px;
+        height: auto;
+        display: block;
+      }
+      .hero amp-img.mobile {
+        border: none;
+        display: none;
+      }
+    </style>
+
+
+  </head>
+
+    <meta itemprop=description content=Pre-order>
+  </div>
+  <div style="display:none; font-size:0; height:0; line-height:0; mso-line-height-rule:exactly; width:0px" height=0 width=0>Lorem Ipsum</div>
+  <div style="display: none; max-height: 0px; overflow: hidden;"></div>
+  <body class=body><img alt="" height=1 width=3 src= style="position: absolute; opacity: 0">
+    <div class=outer>
+      <div class=container>
+        <div class=preheader>
+        </div>
+        <div class=masthead>
+
+          <!-- HEADER -->
+          <table role=presentation id=logo bgcolor=#ffffff width=100% style="border-collapse: collapse; width: 100%; min-width:100%;" cellpadding=0 cellspacing=0 border=0>
+            <tr>
+              <td align=center class=pad-tp-bt-32 style="border-collapse: collapse; font-size: 16px; line-height: 24px; color: #5F6368; font-family: GoogleSans-Regular, Helvetica, Arial, sans-serif;">
+                <table class=header width=100% style="border-collapse: collapse;" cellpadding=0 cellspacing=0 border=0 role=presentation>
+
+                </table>
+              </td>
+            </tr>
+          </table> <!-- /HEADER-->
+        </div>
+
+        <div class="three-tile mod-2"><a aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"></a>
+
+          <table class=desktop role=presentation>
+            <tbody>
+              <tr>
+                <td class=tile-1><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+                     width=210></a></td>
+                <td class=tile-2><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+                    width=210></a></td>
+                <td><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210></a></td>
+              </tr>
+              <tr>
+                <td class=tile-1>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+                <td class=tile-2>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+                <td class=tile-3>
+                  <h3>LOREM IPSUM</h3>
+                  <p>Lorem Ipsum</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tile-1 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210 height=200></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="tile-2 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg width=210></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          <div class="tile-3 mobile"><a alt="" aria-hidden=true href=# style="cursor: pointer; pointer-events: none;"><img alt="" class=tile-img src=https://cdn.pixabay.com/photo/2022/10/01/21/25/woman-7492273_1280.jpg
+          width=210></a>
+            <h3>LOREM IPSUM</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+          
